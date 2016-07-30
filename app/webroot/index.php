@@ -1,5 +1,4 @@
 <?php
-echo phpinfo();
 /**
  * The Front Controller for handling every request
  *
