@@ -49,7 +49,6 @@ class Project extends AppModel {
         	$arrListProject[$value['Project']['id']] = $value['Project']['name'];
         }
 
-
         return $arrListProject;
 	}
 

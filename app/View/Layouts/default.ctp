@@ -17,12 +17,18 @@ $cakeDescription = 'Project';
     <?php echo $this->Html->css('bootstrap/css/bootstrap.min.css') ?>
     <?php echo $this->Html->css('bootstrap/css/bootstrap-datetimepicker.min.css') ?>
     <?php echo $this->Html->css('style.css') ?>
+    <?php echo $this->Html->css('bootstrap/css/bootstrap-datetimepicker.min.css') ?>
 
     <?php echo $this->Html->script('jquery-2.2.4.min.js') ?>
     <?php echo $this->Html->script('jquery-ui.js') ?>
     <?php echo $this->Html->script('bootstrap/js/bootstrap.min.js') ?>
     <?php echo $this->Html->script('bootstrap/js/bootstrap-datetimepicker.min.js') ?>
+    <?php echo $this->Html->script('ckeditor/ckeditor.js') ?>
     <?php echo $this->Html->script('script.js') ?>
+    <script type="text/javascript">
+        var home = "<?php echo Router::url('/', true); ?>";
+        console.log(home);
+    </script>
     
 </head>
 <body>   

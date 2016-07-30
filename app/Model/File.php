@@ -23,4 +23,9 @@ App::uses('AppModel', 'Model');
 
 
 class File extends AppModel {
+	public function findDetailFile($conditions){
+		return $this->find("first",array(
+			'conditions' => $conditions	
+		));
+	}
 }

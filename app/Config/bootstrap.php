@@ -114,4 +114,5 @@ CakeLog::config('error', array(
 
 
 define('LIMIT_PROJECT', 9);
-define('PRODUCT_DIR', 'images');
+define('UPLOADS_FILE_PATH', APP . 'data' . DS);
+define('ADMIN_PATH', 'file');
