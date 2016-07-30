@@ -30,7 +30,9 @@
 		    <td><?php echo h(Task::getTaskPosition($tasks['Task']['position']));?></td>
 		    <td class="user-assige" ref="<?php echo $tasks['Task']['id'];?>"></td>
 		    <td>
+		    	<?php if(!empty($file)): ?>
 				<?php echo $this->Html->link($file['File']['name'], array('controller' => 'tasks', 'action' => 'dowload', $file['File']['id'],ADMIN_PATH)); ?>
+				<?php endif;?>
 		    </td>
 		    <td><?php echo $tasks['Task']['start_time'];?></td>
 		    <td><?php echo $tasks['Task']['end_time'];?></td>
